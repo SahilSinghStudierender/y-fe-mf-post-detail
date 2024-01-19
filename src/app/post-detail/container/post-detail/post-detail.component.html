@@ -1,0 +1,25 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-12 d-flex flex-column flex-md-row justify-content-between">
+            <div class="d-flex align-items-center">
+                <h3>{{post.heading}}</h3>
+                <span class="badge text-primary">{{post.topic}} | {{post.subCategory}}</span>
+            </div>
+            <div>
+                <span>{{post.timestamp | date: 'dd.MM.YYYY HH:mm'}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12">
+            <div [innerHTML]="sanitizer.bypassSecurityTrustHtml(post.body)"></div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <hr>
+    </div>
+    <div class="row mt-3">
+        <app-comment [comments]="comments" [postId]="post.id">
+        </app-comment>
+    </div>
+</div>

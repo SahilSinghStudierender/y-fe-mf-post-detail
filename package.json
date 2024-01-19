@@ -24,6 +24,7 @@
     "@ng-bootstrap/ng-bootstrap": "^14.2.0",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
+    "ngx-editor": "^15.3.0",
     "rxjs": "~7.8.0",
     "single-spa": ">=4.0.0",
     "single-spa-angular": "^8.1.1",
