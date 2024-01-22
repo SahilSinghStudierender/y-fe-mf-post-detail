@@ -21,7 +21,7 @@ jobs:
         run: npm ci
 
       - name: Build Project
-        run: npm run build:single-spa:y-fe-mf-homepage
+        run: npm run build:single-spa:y-fe-mf-post-detail
 
       - name: Login to docker hub
         uses: docker/login-action@v3
