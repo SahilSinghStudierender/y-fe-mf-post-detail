@@ -20,7 +20,7 @@
         <div class="d-flex w-100 justify-content-between align-items-center">
             <div>
                 <div [innerHTML]="sanitizer.bypassSecurityTrustHtml(comment.text)"></div>
-                <small>{{comment.timestamp | date: 'dd.MM.yy HH:mm'}}</small>
+                <small>- anonymous, {{comment.timestamp | date: 'dd.MM.yy HH:mm'}}</small>
             </div>
         </div>
         <hr class="mt-2">
